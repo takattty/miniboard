@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv = "content-type" content = "text/html; charset = UTF-8">
+    <title>LOGIN</title>
+    <link type="text/css" href="./style.css" rel="stylesheet">
+    <script>
+        function setId() {//setID関数を指定。この関数でidの保存の処理をしている。
+            var id = document.querySelector('#id_input').value;//変数idに、id_inputというIDのDOMオブジェクトからvalueを取り出す。文書内の最初の
+            localStorage.setItem('id', id);
+            location.href = '/';
+        }
+    </script>
+</head>
+
+<!--ここから下がおかしい。-->
+<body>
+    <head>
+        <h1>LOGIN</h1>
+    </head>
+    <div role="main">
+        <p>あなたのログインネームを入力してください。</p>
+        <p><input type ="text" id="id_input"><!--9行目の処理はここの事を言っている。-->
+           <button onclick = "setId();">送信</button><p>
+    </div>
+</body>
+
+</html>

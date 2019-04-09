@@ -1,0 +1,1 @@
+{"id":"taka","msg":"IDはどこやねん"}/n{"id":"taka","msg":"なんてやつだ"}/n{"id":"taka","msg":"強い"}/n

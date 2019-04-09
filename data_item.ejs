@@ -1,0 +1,6 @@
+<% if (val != ''){ %><!--空じゃないか確認-->
+<% var obj = JSON.parse(val); %><!--valの値（クライアントから送られてきたJSON形式のtextデータ）をjavascriptオブジェクトに変換し使用可能にする-->
+<tr>
+    <th style = "width:100px;"><%= obj.id %></th><td><%= obj.msg %></td>
+</tr>
+<% } %>
